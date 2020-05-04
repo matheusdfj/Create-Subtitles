@@ -1,0 +1,44 @@
+#divmain{
+
+    background-color: rgb(212, 226, 225);
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    height: 100%;
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    background-color: rgb(66, 134, 197);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.c1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#welc{
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#form{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 25px;
+}
+
+.a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+
+}
+
+p {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
