@@ -9,8 +9,8 @@
 </head>
 <body>
         <div id="divmain">
-            <h1 class="c1">CRIAR SUA LEGENDA</h1>
-            <p id="welc">Seja bem-vindo ao Create Subtitles. Para criar sua legenda, você deve informar o texto que deve ser adicionado a legenda, o tempo onde ele inicia e o tempo em que ele é finalizado. Lembre-se de sempre informar 2 digitos no tempo, tanto no minuto, segundo ou nos centésimos. Caso não sejam informados 2 digitos aquela legenda acarretará problemas. Clique em adicionar para adicionar o texto na legenda. Após a conclusão, clique em baixar para seu arquivo de legenda.SRT seja baixado.</p>
+            <h1 class="c1">CREATE SUBTITLES</h1>
+            <p id="welcome">Seja bem-vindo ao Create Subtitles. Para criar sua legenda, você deve informar o texto que deve ser adicionado a legenda, o tempo onde ele inicia e o tempo em que ele é finalizado. Lembre-se de sempre informar 2 digitos no tempo, tanto no minuto, segundo ou nos centésimos. Caso não sejam informados 2 digitos aquela legenda acarretará problemas. Clique em adicionar para adicionar o texto na legenda. Após a conclusão, clique em baixar para seu arquivo de legenda.SRT seja baixado.</p>
             <form id="form">
 
                 <p>Digite a legenda a ser adicionado aqui</p><br>
@@ -48,7 +48,7 @@
 
     function CTF(){ 
 
-                var nome = document.getElementById("namesrt").value;
+                var name = document.getElementById("namesrt").value;
 
 
                 var blob = new Blob([Tex],
@@ -57,7 +57,7 @@
                     }
                 );
 
-                saveAs(blob, nome + ".srt");
+                saveAs(blob, name + ".srt");
 
                 
             
