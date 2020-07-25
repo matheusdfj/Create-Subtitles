@@ -19,12 +19,12 @@
                 <p class="a">Digite o Tempo em que a Legenda deve ser Adicionada</p><br>
                                   <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="min" placeholder="Minuto" size="6">
                 <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="sec" placeholder="Segundo" size="6">
-                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="cen" placeholder="Centésimos" size="6">
+                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hun" placeholder="Centésimos" size="6">
                 <br>
                 <p class="a">Digite o Tempo em que a Legenda deve ser Finalizada</p><br>
                                   <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="minend" placeholder="Minuto" size="6">
                 <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="secend" placeholder="Segundo" size="6">
-                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="cenend" placeholder="Centésimos" size="6">
+                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hunend" placeholder="Centésimos" size="6">
                 <br>
                 <br>
                 <br>
@@ -67,11 +67,11 @@
         var sub = document.getElementById('sub').value;
         var min = document.getElementById("min").value;
         var sec = document.getElementById("sec").value;
-        var cen = document.getElementById("cen").value;
+        var hun = document.getElementById("hun").value;
         var min_end = document.getElementById("minend").value;
         var sec_end = document.getElementById("secend").value;
-        var cen_end = document.getElementById("cenend").value;
-        var newTxt = "00:" + min + ":" + sec + "," + cen + "0" +" --> " + "00:" + min_end + ":" + sec_end + "," + cen_end + "0";
+        var hun_end = document.getElementById("hunend").value;
+        var newTxt = "00:" + min + ":" + sec + "," + hun + "0" +" --> " + "00:" + min_end + ":" + sec_end + "," + hun_end + "0";
         Num++;
         document.getElementById("SRT").innerHTML += Num + '<br>' + newTxt + '<br>' + sub + '<br>' + '<br>';
 
