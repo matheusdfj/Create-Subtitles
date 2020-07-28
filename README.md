@@ -4,6 +4,6 @@ Create Subtitles is a project made for a school homework, with the aim of making
 Source: https://github.com/eligrey/FileSaver.js
 
 # Português (PT-BR)
-Create Subtitles foi um projeto feito para um trabalho escolar, com o objetivo de facilitar o trabalho de legendagem de filmes. HTML, CSS e Javascript foram os idiomas usados para criar o projeto, além da importação do arquivo FileSaver.js.
+Create Subtitles foi um projeto feito para um trabalho escolar, com o objetivo de facilitar o trabalho de legendagem de filmes. HTML, CSS e Javascript foram as linguagens utilizadas para a criação do projeto, além da importação do arquivo FileSaver.js.
 
 Fonte:  https://github.com/eligrey/FileSaver.js
