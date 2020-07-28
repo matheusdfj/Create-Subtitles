@@ -10,25 +10,25 @@
 <body>
         <div id="divmain">
             <h1 class="c1">CREATE SUBTITLES</h1>
-            <p id="welcome">Seja bem-vindo ao Create Subtitles. Para criar sua legenda, você deve informar o texto que deve ser adicionado a legenda, o tempo onde ele inicia e o tempo em que ele é finalizado. Lembre-se de sempre informar 2 digitos no tempo, tanto no minuto, segundo ou nos centésimos. Caso não sejam informados 2 digitos aquela legenda acarretará problemas. Clique em adicionar para adicionar o texto na legenda. Após a conclusão, clique em baixar para seu arquivo de legenda.SRT seja baixado.</p>
+            <p id="welcome">Welcome to Create Subtitles. By Matheus Junqueira.<br>Minutes, seconds and hundredths must have 2 numbers. (Ex.: For 2 seconds, use 02)</p>
             <form id="form">
 
                 <p>Digite a legenda a ser adicionado aqui</p><br>
                 <textarea name="" id="sub" cols="30" rows="4" placeholder="Digite a legenda aqui"></textarea>
                 <br>
-                <p class="a">Digite o Tempo em que a Legenda deve ser Adicionada</p><br>
-                                  <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="min" placeholder="Minuto" size="6">
-                <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="sec" placeholder="Segundo" size="6">
-                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hun" placeholder="Centésimos" size="6">
+                <p class="a">Insert the text start time</p><br>
+                                  <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="3" id="min" placeholder="Minute" size="6">
+                <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="sec" placeholder="Second" size="6">
+                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hun" placeholder="Hundredth" size="6">
                 <br>
-                <p class="a">Digite o Tempo em que a Legenda deve ser Finalizada</p><br>
-                                  <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="minend" placeholder="Minuto" size="6">
-                <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="secend" placeholder="Segundo" size="6">
-                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hunend" placeholder="Centésimos" size="6">
+                <p class="a">Insert the text end time</p><br>
+                                  <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="3" id="minend" placeholder="Minute" size="6">
+                <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="secend" placeholder="Second" size="6">
+                <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hunend" placeholder="Hundredth" size="6">
                 <br>
                 <br>
                 <br>
-                <label> </label> <button onclick="AddToSRT()" type="submit"> Adicionar </button>
+                <label> </label> <button onclick="AddToSRT()" type="submit"> Add </button>
 
             </form>
             <br>
@@ -45,7 +45,7 @@
     var Num = 0;
     var Tex = "";
     console.log(legenda);
-
+        
     function CTF(){ 
 
                 var name = document.getElementById("namesrt").value;
