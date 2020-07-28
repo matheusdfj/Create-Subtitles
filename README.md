@@ -1,7 +1,7 @@
 # Create Subtitles
 
 # English
-Create Subtitles is a project made for a school homework, with the aim of making the job of subtitling a film easier. HTML, CSS and Javascript were the languages used to create the project, in addition to importing the FileSaver.js file.
+Create Subtitles was a project made for a school homework, with the aim of making the job of subtitling a film easier. HTML, CSS and Javascript were the languages used to create the project, in addition to importing the FileSaver.js file.
 
 Source: https://github.com/eligrey/FileSaver.js
 
