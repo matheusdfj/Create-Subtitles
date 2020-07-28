@@ -10,18 +10,18 @@
 <body>
         <div id="divmain">
             <h1 class="c1">CREATE SUBTITLES</h1>
-            <p id="welcome">Welcome to Create Subtitles. By Matheus Junqueira.<br>Minutes, seconds and hundredths must have 2 numbers. (Ex.: For 2 seconds, use 02)</p>
+            <p id="welcome">Welcome to Create Subtitles. By Matheus Junqueira.<br>Minutes, seconds and hundredths must have 2 numbers. (Ex.: For 2 seconds, use 02).</p>
             <form id="form">
 
-                <p>Digite a legenda a ser adicionado aqui</p><br>
-                <textarea name="" id="sub" cols="30" rows="4" placeholder="Digite a legenda aqui"></textarea>
+                <p>Insert text to add here</p><br>
+                <textarea name="" id="sub" cols="30" rows="4" placeholder="Insert text here"></textarea>
                 <br>
-                <p class="a">Insert the text start time</p><br>
+                <p class="a">Insert text start time</p><br>
                                   <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="3" id="min" placeholder="Minute" size="6">
                 <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="sec" placeholder="Second" size="6">
                 <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hun" placeholder="Hundredth" size="6">
                 <br>
-                <p class="a">Insert the text end time</p><br>
+                <p class="a">Insert text end time</p><br>
                                   <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="3" id="minend" placeholder="Minute" size="6">
                 <label> <strong>:</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="secend" placeholder="Second" size="6">
                 <label> <strong>,</strong> </label><input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2" id="hunend" placeholder="Hundredth" size="6">
@@ -32,11 +32,11 @@
 
             </form>
             <br>
-            <h3 class="c1"> Sua Legenda .SRT</h3>
+            <h3 class="c1">Your .SRT Subtitle</h3>
             <br>
             <p id="SRT"></p>
-            <input type="text" id="namesrt" placeholder="Nome Da Legenda" size="14">
-            <button onclick="CTF()">Baixar</button>
+            <input type="text" id="namesrt" placeholder="Subtitle's Name" size="14">
+            <button onclick="CTF()">Download</button>
         </div>
 </body>
 <script src="FileSaver.js"></script>
